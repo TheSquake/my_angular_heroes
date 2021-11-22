@@ -31,9 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-    - uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ env.NODE_VERSION }}
       uses: actions/setup-node@v2
