@@ -50,6 +50,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'bart-angular-heroes'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2CF45905C937424D8492FFC757F69D49 }}
-          package: .
+          package: ./dist/bart-angular-heroes
